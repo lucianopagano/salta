@@ -1,0 +1,150 @@
+
+.text-consulta{
+    background: #efefef;
+    border-radius: 0.5rem;
+    width: 100%
+}
+
+.btn-outline-primary{
+	color:#016fb9!important;
+	cursor: pointer;
+}
+.btn-outline-primary:hover{
+	color:#fff!important;
+}
+.input-group-text{
+	background:#016FB9;
+	border-color:#ccc;
+	font-weight: 600;
+	color: #fff;
+	width: 120px;
+}
+
+.input-group .custom-select{
+	border-color:#ccc;
+}
+.consulta-texto {
+	margin: 10px 0px;
+}
+.Pendiente{
+	color:#fd7e14;
+	font-weight:700;
+	padding-left: 10px;
+
+}
+.Pendiente:before{
+	content:'\f4fd';
+	font-family:"Font Awesome 5 Free";
+	margin-right:6px;
+}
+.Iniciada{
+	color:#777;
+	font-weight:700;
+	padding-left: 10px;
+}
+.Iniciada:before{
+	content:'\f328';
+	font-family:"Font Awesome 5 Free";
+	margin-right:6px;
+}
+.Asignada{
+	color:#4c6ef5;
+	font-weight:700;
+	padding-left: 10px;
+}
+.Asignada:before{
+	content:'\f4fc';
+	font-family:"Font Awesome 5 Free";
+	margin-right:6px;
+}
+.Finalizada{
+	color:#1aaf3b;
+	font-weight:700;
+	padding-left: 10px;
+}
+.Finalizada:before{
+	content:'\f46c';
+	font-family:"Font Awesome 5 Free";
+	margin-right:6px;
+}
+.Cancelada{
+	color:#f53838;
+	font-weight:700;
+	padding-left: 10px;
+}
+.Cancelada:before{
+	content:'\f1f8';
+	font-family:"Font Awesome 5 Free";
+	margin-right:6px;
+}
+.asterisco_class{
+	color:#f53838;
+}
+.span_asterisco{
+	font-weight: 700;
+	margin-left: 0.5em;
+}
+.alert.alert-danger.validacion-small {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-left: 1em;
+}
+.pd-30 {padding-right: 35px;}
+.asterisco_bloque {margin-right: 5px;}
+
+.mat-button-wrapper {font-size: 20px!important;}
+.mat-form-field-appearance-fill .mat-form-field-infix {top: -10px!important;}
+
+@media screen and (max-width: 1024px) {
+	.mat-table {display: flex; flex-wrap: wrap;}
+	.mat-footer-row, .mat-header-row, .mat-row {border:none;}
+	.mat-header-cell {display: none!important;}
+	.mat-header-row{display:none!important;}
+	.mat-row  { box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2); padding: 0px 0 14px 0; width:48%;margin:15px 1%;
+		flex-direction:column!important; justify-content: left; align-items:start!important; border-radius: 5px;}
+	mat-cell {border-bottom: 1px solid #ededed!important; width: 100%}
+	.columna-datos { padding: 20px 16px 20px; }
+	.columna_numero:before {padding-left: 20px!important; content:"Consulta";  margin-right: 20px; width: 30%; font-weight: 400; font-size: 16px; }
+	.columna_numero {background: #016fb9!important; color: white!important; font-size: 16px; padding-top: 20px!important; padding-bottom: 20px!important; border-top-left-radius:5px; border-top-right-radius:5px;}
+	.columna_fecha:before {padding-left: 20px!important;content:"Fecha";  margin-right: 20px; width: 30%; font-weight: 500;}
+	.columna_tema:before {padding-left: 20px!important;content:"Tema"; margin-right: 20px; width: 30%; font-weight: 500;}
+	.columna_subtema:before {padding-left: 20px!important; content:"Subtema"; margin-right: 20px; width: 30%; font-weight: 500;}
+	.columna_estado:before {padding-left: 5px!important;content:"Estado"; color: #222;  margin-right: 20px; width: 30%; font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";  font-weight: 500;}
+	.columna_asignado:before {padding-left: 5px!important;content:"Asignado";  margin-right: 20px; width: 30%; font-weight: 500; }
+	.columna_grupo:before {padding-left: 5px!important; content:"Grupo Asignado";  margin-right: 20px; width: 30%; font-weight: 500;}
+	.mat-cell:last-child {border:none;}
+	.mat-cell, .mat-footer-cell, .mat-header-cell {align-items:start!important; width: 100%; padding: 12px 0px; }
+	.mat-footer-row::after, .mat-header-row::after, .mat-row::after {display: none;}
+	.mat-cell.ultima {border:0!important; padding:20px 20px 20px 0;}
+	.verConsulta:after {content:" Ver Consulta"; margin-left: 7px; }
+	.boton-consulta {background: #9AcA3C!important; border:1px solid #9AcA3C; color: white!important; width: 160px; border-radius:30px; padding:.375rem .75rem;}
+}
+
+@media screen and (max-width: 800px) {
+	.mat-footer-row, .mat-header-row, .mat-row {border:none;}
+	.mat-header-cell {display: none!important;}
+	.mat-header-row{display:none!important;}
+	.mat-row  { width:100%;margin:15px 0%; box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2); padding: 0px 0 14px 0; margin:15px 8px;
+		flex-direction:column!important; justify-content: left; align-items:start!important; border-radius: 5px;}
+	mat-cell {border-bottom: 1px solid #ededed!important; width: 100%}
+	.columna-datos { padding: 20px 16px 20px; }
+	.columna_numero:before {padding-left: 20px!important; content:"Consulta";  margin-right: 20px; width: 30%; font-weight: 400; font-size: 16px; }
+	.columna_numero {background: #016fb9!important; color: white!important; font-size: 16px; padding-top: 20px!important; padding-bottom: 20px!important; border-top-left-radius:5px; border-top-right-radius:5px;}
+	.columna_fecha:before {padding-left: 20px!important;content:"Fecha";  margin-right: 20px; width: 30%; font-weight: 500;}
+	.columna_tema:before {padding-left: 20px!important;content:"Tema"; margin-right: 20px; width: 30%; font-weight: 500;}
+	.columna_subtema:before {padding-left: 20px!important; content:"Subtema"; margin-right: 20px; width: 30%; font-weight: 500;}
+	.columna_estado:before {padding-left: 5px!important;content:"Estado"; color: #222;  margin-right: 20px; width: 30%; font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";  font-weight: 500;}
+	.columna_asignado:before {padding-left: 5px!important;content:"Asignado";  margin-right: 20px; width: 30%; font-weight: 500; }
+	.columna_grupo:before {padding-left: 5px!important; content:"Grupo Asignado";  margin-right: 20px; width: 30%; font-weight: 500;}
+	.mat-cell:last-child {border:none;}
+	.mat-cell, .mat-footer-cell, .mat-header-cell {align-items:start!important; width: 100%; padding: 12px 0px; }
+	.mat-footer-row::after, .mat-header-row::after, .mat-row::after {display: none;}
+	.mat-cell.ultima {border:0!important; padding:20px 20px 20px 0;}
+	.verConsulta:after {content:" Ver Consulta"; margin-left: 7px; }
+	.boton-consulta {background: #9AcA3C!important; border:1px solid #9AcA3C; color: white!important; width: 160px; border-radius:30px; padding:.375rem .75rem;}
+    .mat-row {
+        border-bottom-width: none!important;
+        border-style: none!important;
+    }
+}
