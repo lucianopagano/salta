@@ -291,3 +291,10 @@
   .cls-2 {
     fill: #ffffff;
   }
+
+  .nav-salta{
+    min-height: 37px;
+    height: 50px;
+    margin-top: 23px;
+    background: #1a5c96;
+  }

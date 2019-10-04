@@ -148,3 +148,51 @@
         border-style: none!important;
     }
 }
+
+.bkgColor{	
+	box-shadow: 0 10px 25px -10px #0000007d;
+	background: #fefefe;
+	border-bottom: 2px solid #294154 ;
+}
+.disple-4{
+	font-weight: 200;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+.label-control{
+    font-size: 0.85em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-indent: 1em;
+    color:#555;
+}
+.form-control{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px solid #1a5c96;
+	border-radius: 0;
+	background: #9f9ca933;
+}
+.pill-btn{
+	padding-left:1.8em;
+	padding-right:1.8em;
+	border-radius: 0;
+	font-size: .9em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.mat-header-row{
+	background: #1e303e;
+	color:#ddd;
+	box-shadow: 0 10px 10px -15px #0007;
+}
+.mat-row{
+    background: #eee;
+	box-shadow: 0 3px 10px -5px #0005;
+	transition: all 0.4s;
+}
+.mat-row:hover{
+	background: #dcdbdf;
+}
