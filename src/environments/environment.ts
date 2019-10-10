@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: 'http://a4dc3da9.ngrok.io/api/paciente'
+  url: 'https://apisalta.azurewebsites.net/api/paciente'
 };
 
 /*

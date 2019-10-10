@@ -11,6 +11,7 @@ import { getEspPaginatorIntl } from 'src/app/directivas/esp-paginator-intl.ts';
 import localeEsAr from '@angular/common/locales/es-AR';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AltahistoriaComponent } from './secciones/alta/altahistoria/altahistoria.component';
 
 
 registerLocaleData(localeEsAr);
@@ -18,7 +19,8 @@ registerLocaleData(localeEsAr);
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    AltahistoriaComponent
   ],
   imports: [
     BrowserModule,

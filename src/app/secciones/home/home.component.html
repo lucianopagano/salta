@@ -3,19 +3,19 @@
 <div class="container">
   <div class="row">
        <div class="col-md-12 text-right mb-20 pd-30">
-          <button type="button" class="btn btn-primary pill-btn" data-toggle="modal" data-target="#nuevoHistorial" ><i class="fas fa-edit"></i> Agregar Historia Clinica</button>
+          <a class="btn btn-primary pill-btn" routerLink="/alta_historia_clinica" routerLinkActive="active">Agregar Historia Clinica</a>
        </div>
      </div>
 </div>
 
 <div class="container">
-   
-  <div class="row">      
-        
+
+  <div class="row">
+
     <div class="mb-4 mt-0 col-md-12 padding-none">
-            <div class="card-body">         
-            
-       
+            <div class="card-body">
+
+
               <div class="table-responsive resultado">
 <mat-table [dataSource]="listadoHistorias" matSort class="table listaConsulta ">
 
@@ -74,106 +74,3 @@
 
     </main>
 
-<div class="modal fade  " id="nuevoHistorial" tabindex="-1" role="dialog" aria-labelledby="NuevoHistorial" aria-hidden="true" #modal>
-        <div class="modal-dialog modal-lg bkgColor" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title display-4" id="exampleModalLabel">Nuevo Historial</h3>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body px-4">
-                <form  [formGroup]="registerForm" (ngSubmit)="onSubmit()" aria-labelledby="exampleModalLabel" >
-                    <div class="form-row">
-                        <div class="form-group col-md-4">
-                            <label class="label-control" for="validationDefault02">Numero de Orden</label>
-                            <input type="" formControlName="NumeroOrden" class="form-control form-control-sm" placeholder="Número" name="NumeroOrden" [ngClass]="{ 'is-invalid': submitted && f.NumeroOrden?.errors }">
-                            <div *ngIf="submitted && f.NumeroOrden?.errors" class="invalid-feedback">
-                                <div *ngIf="f.NumeroOrden?.errors.required">Ingrese un numero de orden</div>
-                            </div>
-                        </div>
-      
-                      <div class="form-group col-md-8">
-                          <label class="label-control" for="validationDefault01">Nombre</label>
-                          <input type="" formControlName="Nombre" class="form-control form-control-sm" placeholder="Nombre" name="Nombre" [ngClass]="{ 'is-invalid': submitted && f.Nombre?.errors }">
-                          <div *ngIf="submitted && f.Nombre?.errors" class="invalid-feedback">
-                              <div *ngIf="f.Nombre?.errors.required">Ingrese un nombre</div>
-                          </div>
-                      </div>
-                      
-                      <div class="form-group col-md-12">
-                          <label class="label-control" for="validationDefault01">Apellido</label>
-                          <input type="" formControlName="Apellido" class="form-control form-control-sm" placeholder="Apellido" name="Apellido" ng-reflect-required [ngClass]="{ 'is-invalid': submitted && f.Apellido?.errors }">
-                          <div *ngIf="submitted && f.Apellido?.errors" class="invalid-feedback">
-                              <div *ngIf="f.Apellido?.errors.required">Ingrese un apellido</div>
-                          </div>
-                      </div> 
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-5">
-                            <label class="label-control">Documento</label>
-                            <input type="text" formControlName="DocumentoDeIdentidad" mask="0000000000" name="DocumentoDeIdentidad" class="form-control form-control-sm" placeholder="11111111" [ngClass]="{ 'is-invalid': submitted && f.DocumentoDeIdentidad?.errors }">
-                            <div *ngIf="submitted && f.DocumentoDeIdentidad?.errors" class="invalid-feedback">
-                                <div *ngIf="f.DocumentoDeIdentidad?.errors.required">Ingrese un dni en el formato valido</div>
-                            </div>
-                          </div>
-                        <div class="form-group col-md-2">
-                            <label class="label-control">Edad</label>
-                            <input type="text" formControlName="Edad" class="form-control form-control-sm" placeholder="Edad" name="Edad" [ngClass]="{ 'is-invalid': submitted && f.Edad?.errors }">
-                            <div *ngIf="submitted && f.Edad?.errors" class="invalid-feedback">
-                                <div *ngIf="f.Edad?.errors.required">Ingrese una edad valida</div>
-                            </div>
-                        </div>
-                      <div class="form-group col-md-5">
-                          <label class="label-control">Sexo</label>
-                          <select formControlName="Genero" class="form-control form-control-sm" placeholder="Genero" name="Genero" [ngClass]="{ 'is-invalid': submitted && f.Genero?.errors }">
-                              <option value='' disabled>Seleccione...</option>
-                              <option [ngValue]='1'>Femenino</option>
-                              <option [ngValue]='2'>Masculino</option>                              
-                          </select>
-                      </div>
-                     
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-12">
-                        <label class="label-control" for="validationDefault04">Obra Social</label>
-                        <select formControlName="ObraSocial" class="form-control form-control-sm" name="ObraSocial" [ngClass]="{ 'is-invalid': submitted && f.ObraSocial?.errors }">
-                            <option value='' disabled>Seleccione...</option>
-                            <option [ngValue]='0'>IOMA</option>
-                            <option [ngValue]='1'>PAMI</option>
-                            <option [ngValue]='2'>Swiss Medical</option>
-                            
-                        </select>
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-lg-3 col-md-5">
-                        <label class="label-control" for="validationDefault05">Grupo Sanguineo</label>
-                        <select formControlName="GrupoSanguineo" class="form-control form-control-sm" name="Grupo" [ngClass]="{ 'is-invalid': submitted && f.GrupoSanguineo?.errors }">
-                            <option value='' disabled>Seleccione...</option>
-                            <option [ngValue]='3'>O</option>
-                            <option [ngValue]='0'>A</option>
-                            <option [ngValue]='2'>B</option>
-                            <option [ngValue]='1'>AB</option>
-                        </select>
-                      </div> 
-                      <div class="form-group col-lg-3 col-md-5">
-                          <label class="label-control" for="validationDefault05">Factor</label>
-                          <select formControlName="FactorSanguineo" class="form-control form-control-sm" name="Factor" [ngClass]="{ 'is-invalid': submitted && f.FactorSanguineo.errors }">
-                              <option value='' disabled>Seleccione...</option>
-                              <option [ngValue]='0'>Rh +</option>
-                              <option [ngValue]='1'>Rh -</option>
-                          </select>
-                        </div>      
-                      
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-outline-danger pill-btn" data-dismiss="modal"><i class="fas fa-times fa-lg"></i>CANCELAR</button>
-                      <button  type="submit" class="btn btn-success pill-btn"><i class="fas fa-save fa-lg"></i>GUARDAR</button>
-                    </div>
-                  </form>
-            </div>
-          </div>
-        </div>
-  </div>
