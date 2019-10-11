@@ -9,4 +9,6 @@ export class HistoriaClinica {
     ObraSocial: string;
     GrupoSanguineo: string;
     FactorSanguineo: string;
+    Observaciones: string;
+    ImagenPerfil: string;
 }

@@ -37,5 +37,4 @@ export class AltahistoriaComponent implements OnInit {
       this.nuevaHistoriaClinica = this.registerForm.value;
       this.servicioOrdenes.SetOrden(this.nuevaHistoriaClinica);
     }
-
 }

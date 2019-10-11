@@ -32,6 +32,7 @@
     "pusher-js": "^5.0.2",
     "rxjs": "~6.4.0",
     "rxjs-compat": "^6.5.3",
+    "sweetalert2": "^8.18.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
